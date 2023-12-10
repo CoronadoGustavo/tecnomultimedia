@@ -51,10 +51,13 @@ class Aventura{
     this.juego = new Juego();
   }
 dibujar() {  
-      this.pantallas[this.pantallaActual].dibujar();    
-    if (this.mostrarJuego) {
+      if (this.mostrarJuego) {
       this. juego. dibujar();      
-    }    
+    }
+    else{
+       this.pantallas[this.pantallaActual].dibujar();    
+    
+    }   
   }  
 click() {    
   let siguientePantalla = this.pantallas[this.pantallaActual].click();
