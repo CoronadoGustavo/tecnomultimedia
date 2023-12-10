@@ -2,8 +2,6 @@ class Aventura{
   constructor(){  
     this.textos = [];
     this.pantallas = []; 
-    
-     
     this.pantallas[0] = new PantallaDosBotones(imgAventura[0],imgBotones[0], imgBotones[1],this.textos,1,43); 
     this.pantallas[1] = new PantallaDeUnBoton(imgAventura[1], imgBotones[2],this.textos, 2);    
     this.pantallas[2] = new PantallaDeUnBoton(imgAventura[2], imgBotones[2], this.textos,3);     
